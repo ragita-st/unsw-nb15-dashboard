@@ -7,7 +7,7 @@ import numpy as np
 import joblib
 import os
 
-MODEL_PATH = "models/"
+MODEL_PATH = "dashboard/models/"
 
 model_names = {
     "Random Forest": "rf_model.pkl",
@@ -19,7 +19,7 @@ model_names = {
 selected_features = ['sbytes', 'dbytes', 'sttl', 'sload', 'dload', 'ackdat', 'smean', 'ct_state_ttl', 'ct_srv_dst']
 
 # Load pre-trained models
-label_encoder = joblib.load("utils/label_encoder.pkl")
+label_encoder = joblib.load("dashboard/utils/label_encoder.pkl")
 # preprocessor = joblib.load("utils/preprocessor.pkl")
 
 @st.cache_resource
