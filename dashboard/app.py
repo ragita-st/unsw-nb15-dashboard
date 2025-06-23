@@ -10,9 +10,9 @@ import os
 MODEL_PATH = "dashboard/models/"
 
 model_names = {
-    "Random Forest": "rf_model.pkl",
+    # "Random Forest": "rf_model.pkl",
     "XGBoost": "xgb_model.pkl",
-    # "LightGBM": "lgbm_model.pkl",
+    "LightGBM": "lgbm_model.pkl",
     # "Ensemble": "ensemble_model.pkl"
 }
 
